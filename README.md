@@ -66,3 +66,10 @@ import tests
 
 ## To generate Cora-like graphs
 ```tests.run_and_save_all(methods=['Cora'], lr=5e-4, epochs=1000, num_generated_graphs=40, save_res=True, use_existing_file=False)```
+
+##  Reference:
+If you use this paper in your research, please cite 
+```
+GraphWeave: Graph Generation by Random Walk Trajectories
+by Rahul Nandakumar and Deepayan Chakrabarti, 
+in PKDD 2025
