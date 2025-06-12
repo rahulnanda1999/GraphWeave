@@ -6,10 +6,13 @@ This repository contains code to run experiments with **GraphWeave**, a method f
   <img src="overview.png" alt="GraphWeave Overview" width="700"/>
 </p>
 
-## First compile orca
+## First compile orca. (see http://www.biolab.si/supp/orca/orca.html)
 ```cd orca```
 
 ```g++ -O2 -std=c++11 -o orca orca.cpp` ```
+
+## Install requirements 
+``` pip install requirements.txt```
 
 ## Register and Download Gurobi:
 
@@ -35,10 +38,15 @@ Note that each solver has its own options, and Gurobi's options may not apply to
 import tests
 
 ## Run SBM
+```
+import tests
+tests.run_and_save_all(methods=['SBM'], lr=5e-3, epochs=1000, num_generated_graphs=40, save_res=True, use_existing_file=False)
+```
+
  - Generates 40 graphs
  - Set ```save_res=True``` to save the results.
  - Then, in future runs, it will reload these results if ```use_existing_file=True```.
-```tests.run_and_save_all(methods=['SBM'], lr=5e-3, epochs=1000, num_generated_graphs=40, save_res=True, use_existing_file=False)```
+
 
 ## The end result is as shown below. The column under "ratio GraphWeave" is reported in the paper.
 | Metric        | inter GraphWeave | ratio GraphWeave | true       |

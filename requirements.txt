@@ -1,0 +1,11 @@
+community==1.0.0b1
+gurobipy==12.0.1
+matplotlib==3.10.0
+networkx==3.4.2
+numpy==2.2.2
+pyemd==1.0.0
+pytorch-warmup==0.2.0
+rdkit==2025.3.2
+scikit-learn==1.6.1
+scipy==1.15.1
+torch==2.5.1
