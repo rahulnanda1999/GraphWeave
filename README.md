@@ -80,4 +80,4 @@ If you use this paper in your research, please cite
 ```
 GraphWeave: Graph Generation by Random Walk Trajectories
 by Rahul Nandakumar and Deepayan Chakrabarti, 
-in PKDD 2025
+in ECML PKDD 2025
